@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
+
 import Image from './images/pink_fridge.svg';
 
 const Navbar = () => {
+
     return ( 
-        <nav className="navbar">
+        <nav className="navbar" role="navigation">
             <img src={Image} alt="" style={
                 {
                     width: "10vh",
@@ -11,11 +14,11 @@ const Navbar = () => {
             }/>
             <h1>Fridge Excess</h1>
             <div className="links">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
                 {/* {} = dynamic value, inner {} is JavascriptObject */}
-                <a href="/about" >Landing</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/contact">Contact</a>
+                <Link to="/about" >About</Link>
+                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/contact">Contact</Link>
             </div>
         </nav>
      );

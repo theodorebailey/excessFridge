@@ -5,8 +5,6 @@ const ProductList = (props) => {
     // grab title and set to title 
     const title = props.title;
 
-
-    // 
     return ( 
         <div className="product-list">
             {/* <h2> { title } </h2> */}

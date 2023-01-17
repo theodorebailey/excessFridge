@@ -1,23 +1,16 @@
-
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
+
 import Home from './Home';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+
 // A component is a function, which we then return
 function App() {
   
 
-  // we can right valid javascript
-  const title = 'Welcome';
-  // react will convert to a string
-  const likes = 20;
-
   // {} will output dynamic values  - JSX
-
-
-  // booleans and objects are problematic
-  const person = {
-    name: 'Josh',
-
-  }
 
 
   return (
@@ -26,7 +19,12 @@ function App() {
       {/* return Navbar */}
       <Navbar />
       <div className="content">
-        <Home />
+        <Routes>
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/' element={<Home />} />
+        </Routes>
       </div>
     </div>
   );

@@ -17,14 +17,21 @@ const Home = () => {
 
 
 
-
     return ( 
+        <>
         <div className="home">
+        <div>
+            <h1 className="title is-1">This is the Home Page</h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dicta, ad tempore explicabo dolor quo similique dignissimos ratione non nam.
+            </p>
+        </div>
             <h2>Company Packages</h2>
             {/* pass information ass property */}
             <ProductList products={products} title="Products list" />
             {/* <ProductList products={products.filter((product) => product.featured === "yes")} title="Products list" /> */}
         </div>
+      </>
      );
 }
  
