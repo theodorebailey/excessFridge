@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Navbar from './Navbar';
+import Home from './Home';
+// A component is a function, which we then return
 function App() {
+  
+
+  // we can right valid javascript
+  const title = 'Welcome';
+  // react will convert to a string
+  const likes = 20;
+
+  // {} will output dynamic values  - JSX
+
+
+  // booleans and objects are problematic
+  const person = {
+    name: 'Josh',
+
+  }
+
+
   return (
+    // JSX, syntax slightly altered from HTML - babel transpiller will change to HTML
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* return Navbar */}
+      <Navbar />
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 }
 
+// always export our components to use in other files
 export default App;
+
+{/* output dynamic value *
+         <h1>{title}</h1>
+
+        <p>Liked {likes} times</p>
+
+         <p> {person} </p> *
+
+         <p> { 10 } </p>
+
+        <p> { "Hello, legends" } </p>
+
+        <p> { [1, 2, 3, 4, 5 ] } </p>
+
+        <p> { Math.random() * 10 } </p> */}
