@@ -7,6 +7,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: #333;
+  font-size: 100%;
 }
 .navbar {
   padding: 20px;
@@ -18,7 +19,9 @@
 }
 .navbar h1 {
   color: hotpink;
-  font-size: 4vh;
+  font-size: 5vh;
+  float: left;
+  margin-left: 0;
   
 }
 .navbar .links {
@@ -46,12 +49,8 @@
   border-bottom: 1px solid #fafafa;
 }
 .product-preview:hover {
+  /* create shdow border for a fuller effect */
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  /* expand box size on hover */
   transform: scale(1.1);
-
-}
-.product-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
 }

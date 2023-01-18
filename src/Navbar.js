@@ -6,13 +6,13 @@ const Navbar = () => {
 
     return ( 
         <nav className="navbar" role="navigation">
+            <h1>Fridge Excess</h1>
             <img src={Image} alt="" style={
                 {
-                    width: "10vh",
+                    width: "9vw",
                     height: "auto"
                 }
             }/>
-            <h1>Fridge Excess</h1>
             <div className="links">
                 <Link to="/">Home</Link>
                 {/* {} = dynamic value, inner {} is JavascriptObject */}

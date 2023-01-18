@@ -1,9 +1,7 @@
 const ProductList = (props) => {
 
     // grab products and save to products
-    const products = props.products;
-    // grab title and set to title 
-    const title = props.title;
+    const products = props.products;    
 
     return ( 
         <div className="product-list">
