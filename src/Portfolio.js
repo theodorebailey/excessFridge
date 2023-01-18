@@ -1,10 +1,10 @@
-
+// create component CV RESUME Portfolio
 const Portfolio = () => {
     return ( 
+// create Resume
+<>
 
-        <>
-
-        <body>
+<body>
 
 <div id="doc2" class="yui-t7">
 	<div id="inner">
@@ -48,7 +48,7 @@ const Portfolio = () => {
 
 					<div class="yui-gf">
 						<div class="yui-u first">
-							<h2>Technical</h2>
+							<h2>Technical Skills</h2>
 						</div>
 						<div class="yui-u">
 							<ul class="talent">
@@ -56,6 +56,7 @@ const Portfolio = () => {
 								<li>CSS</li>
                                 <li>React.js</li>
 								<li class="last">Javascript</li>
+                                <li>Outlook</li>
 							</ul>
 						</div>
 					</div>
@@ -71,12 +72,6 @@ const Portfolio = () => {
 								<h3>Customer Service Agent at Siderise Insulation</h3>
 								<h4>NOVEMBER 2022 — AUGUST 2023</h4>
 								<p>Ability to work in a fast passed and high pressure environment whilst maintaining accuracy in detailed quotations to then progress onto purchase.</p>
-							</div>
-
-							<div class="job">
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
                                 <p>Achievements:
 • Improved eye for detail
 • Better accuracy and customer communication to ensure the correct products are sold.
@@ -166,6 +161,7 @@ const Portfolio = () => {
 
 
 </body>
+
 
 </>
 

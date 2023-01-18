@@ -4,48 +4,65 @@
 
 /* base styles */
 * {
+  /* auto set margin to default */
   margin: 0;
+  /* set font default */
   font-family: "Quicksand";
+  /* set text colour default */
   color: #333;
+  /* set font size default */
   font-size: 100%;
 }
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
+
 .navbar h1 {
+  /* text colour */
   color: hotpink;
+  /* font size relative to screen height */
   font-size: 5vh;
   float: left;
-  margin-left: 0;
+  /* provide margin to heading element */
+  margin-left: 50px;
+  /* move links down page from top */
+  margin-top: 20px;
   
 }
 .navbar .links {
+  /* IMPORTANT - allow browser to automate margin left for link elements */
   margin-left: auto;
+  /* move links down page from top */
+  margin-top: 20px;
 }
+
 .navbar a {
+  /* space between nav link elements */
   margin-left: 16px;
+  /* remove bullet points, etc */
   text-decoration: none;
-  padding: 6px;
+  /* padding between link elements */
+  padding: 20px;
 }
+
 .navbar a:hover {
-  color: hotpink;
-  transform: scale(1.1);
+  /* change colour to purple on hover */
+  color: purple;
+  /* doesn't seem to work */
+  transform: scale(1.5);
 }
+
 .content {
+  /* reduce screen width for main page content */
   max-width: 600px;
+  /* margin for centre page */
   margin: 40px auto;
+  /* provide padding */
   padding: 20px;
 }
 
 /* product previews / list */
 .product-preview {
-  padding: 10px 16px;
+  /* padding: 10px 16px; */
   margin: 20px 0;
+  /* prvoide border */
   border-bottom: 1px solid #fafafa;
 }
 .product-preview:hover {

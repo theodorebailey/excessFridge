@@ -1,7 +1,9 @@
+// import link elements to route
 import { Link } from 'react-router-dom';
-
+// import image for logo in nav
 import Image from './images/pink_fridge.svg';
 
+// create nav component
 const Navbar = () => {
 
     return ( 
@@ -24,9 +26,10 @@ const Navbar = () => {
      );
 }
  
-// need to then import 
+// export nav element
 export default Navbar;
 
+// using inline CSS styling
 // Inline CSS
 // style={{
 //     color: "white",

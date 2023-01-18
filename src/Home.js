@@ -1,3 +1,4 @@
+// import useState to save elements
 import {useState} from 'react';
 import ProductList from './ProductList';
 
@@ -9,6 +10,7 @@ const Home = () => {
     // non-reactive element, React won't rerender - we require a hook {useState}, use = hook
 
     // cycle through products - .map javascript methods
+    // array elements with package features sold by company
     const [products, setProducts] = useState([
         {title: "A package", body: "A - z features", price: 9.99, id: 1, featured: "no"},
         {title: "B package", body: "B - y features", price: 5.99, id: 2, featured: "yes"},
